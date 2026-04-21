@@ -1,8 +1,23 @@
 const state = {
     products: [
-        { id: 1, name: "Laptop", price: 999, image: "https://github.com/kmwota-hub/iyf-s10-week-07-kmwota-hub/blob/2ae669c474742b1c09c4982aac281406a15f1a88/images/Laptop.png" },
-        { id: 2, name: "Phone", price: 699, image: "images/phone.png" },
-        { id: 3, name: "Headphones", price: 199, image: "images/headphones.png" }
+        {
+            id: 1,
+            name: "Laptop",
+            price: 999,
+            image: "images/Laptop.png"
+        },
+        {
+            id: 2,
+            name: "Phone",
+            price: 699,
+            image: "images/phone.png"
+        },
+        {
+            id: 3,
+            name: "Headphones",
+            price: 199,
+            image: "images/headphones.png"
+        }
     ],
     cart: [] // { productId, quantity }
 };
