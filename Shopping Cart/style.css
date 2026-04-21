@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: #1a73e8;
+  color: white;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%; /* makes it circular */
+  margin-right: 10px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main {
+  display: flex;
+  padding: 1rem;
+}
+
+.products {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+
+#cart-section {
+  flex: 1;
+  margin-left: 2rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.cart-item {
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 0;
+}
+
+button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+input[type="number"] {
+  width: 50px;
+  margin-left: 0.5rem;
+}
+.product img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product img:hover {
+  transform: scale(1.05);
+}
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
