@@ -2,45 +2,100 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Practice</title>
+
     <style>
-        .highlight { background-color: yellow; }
-        .container { padding: 20px; border: 1px solid #ccc; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #1abc9c;
+        }
+
+        .Container {
+            margin: 4px;
+            padding: 30px;
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            background: #2c3e50;
+            color: white;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
-    <header id="main-header">
-        <h1>DOM Practice</h1>
+
+    <header class="head" id="main-header">
+        <h1>JavaScript Practices</h1>
         <nav>
             <ul class="nav-list">
-                <li><a href="#" class="nav-link">Home</a></li>
-                <li><a href="#" class="nav-link">About</a></li>
-                <li><a href="#" class="nav-link">Contact</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shopping.html">Shopping Cart</a></li>
+                <li><a href="todos.html" class="nav-link">To-Do List</a></li>
             </ul>
         </nav>
     </header>
-    
-    <main class="container">
-        <article>
-            <h2 class="title">Article Title</h2>
-            <p class="content">This is the first paragraph.</p>
-            <p class="content">This is the second paragraph.</p>
-        </article>
-        
-        <section>
-            <h2>Form Section</h2>
-            <form id="contact-form">
-                <input type="text" id="name" name="name" placeholder="Name">
-                <input type="email" id="email" name="email" placeholder="Email">
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
-    
+
+    <div class="Container">
+     
+     <p> This project represents a step forward in my JavaScript journey, focusing on building scalable and maintainable applications. I have implemented data persistence to ensure a seamless user experience, structured the codebase to reflect real-world application architecture, and applied best practices to produce clean, professional-quality code. In addition, I revisited and refactored earlier projects, improving performance, readability, and overall design. This work demonstrates not just functionality, but a commitment to writing efficient, organized, and production-ready JavaScript.</p>
+     </div>
     <footer>
         <p>&copy; 2026</p>
     </footer>
-    
+
     <script src="dom.js"></script>
 </body>
 </html>
