@@ -4,8 +4,8 @@ const state = {
             id: 1,
             name: "Laptop",
             price: 999,
-            image: "images/Laptop.png"
-        },
+            image: "https://github.com/kmwota-hub/iyf-s10-week-07-kmwota-hub/blob/8bb8563b7fcda6451a9ff4e807765a5107f00a94/images/Laptop.png"
+        };
         {
             id: 2,
             name: "Phone",
