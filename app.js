@@ -5,7 +5,7 @@ const state = {
             name: "Laptop",
             price: 999,
             image: "images/Laptop.png"
-        };
+        }
         {
             id: 2,
             name: "Phone",
